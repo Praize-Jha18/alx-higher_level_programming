@@ -9,11 +9,11 @@ if (__name__ == "__main__"):
 
     if (argc != 4):
         print(f"Usage: {argv[0]} <a> <operator> <b>")
-        exit (1)
+        exit(1)
 
     if (argv[2] not in operators):
         print("Unknown operator. Available operators: +, -, * and /")
-        exit (1)
+        exit(1)
 
     num1 = int(argv[1])
     operator = argv[2]
