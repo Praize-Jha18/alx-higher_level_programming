@@ -1,4 +1,12 @@
 #!/usr/bin/python3
-class LockedClass:
+"""
+Locked Class
+"""
 
-    __slots__ = 'first_name'
+class LockedClass:
+    """ Prevent user to create new attributes """
+    __slots__ = ['first_name']
+
+    def __init__(self, first_n=""):
+        self.first_name = first_n
+
